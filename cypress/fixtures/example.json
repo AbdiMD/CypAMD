@@ -1,0 +1,16 @@
+{
+  "email": "abdiamd@yopmail.com",
+  "password": "Qjq%<2Whj%t`",
+  "menuToClick": "Messages",
+  "subMenus": ["Urgent Message","Group Mailing","Functionality Alert"], 
+  "buttonAbove table": ["Reset", "Add a new Alert"],
+  "alertTitle": "AMD Alert functionality for testing 2",
+  "categoryofuser": ["Academic Admin","Academic Director","Academic Final Jury Member","Academic Jury Member","Chief Group Academic"],
+  "messageOftheAlert": "This is the text message for Alert functionality. this is just for testing purposes",
+  "textForButton1": "Very Happy",
+  "textForButton2": "Disappointing",
+  "popupActionButton": ["Cancel","Save & Leave", "Publish"],
+  "saveAlertTitle": "The feature alert has been successfully saved But not published.",
+  "saveAlertBody": "The feature alert has been successfully saved.To publish it please press the \"publish\" button",
+  "saveAlertButton": "Understood"
+}
