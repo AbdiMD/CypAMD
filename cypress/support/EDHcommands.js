@@ -1,4 +1,4 @@
-import EDHLoginPage from '../integration/auto/pageObjects/EDHloginPage'
+import EDHLoginPage from './pageObjects/EDHLoginPage'
 
 Cypress.Commands.add('EDHlogin', (env, email, password) => {
     const loginPage = new EDHLoginPage()
