@@ -1,5 +1,11 @@
 {
     "env": "https://zetta-staging.work/",
     "operatorDirectorEmail": "m.mugnier2@yopmail.com",
-    "operatorDirectorPassword" : "MW98U};xdfb("
+    "operatorDirectorPassword" : "MW98U};xdfb(",
+
+    "operatorAdminEmail": "abdi.zacky@yopmail.com",
+    "operatorAdminPassword": "MW98U};xdfb(",
+
+    "contractManagerEmail": "a.amoury@yopmail.com",
+    "contractManagerPassword": "MW98U};xdfb("
 }

@@ -1,0 +1,13 @@
+{
+    "AdmissionmenuEN" : "Admissions",
+    "AdmissionmenuFR" : "Inscriptions",
+    "TeacherManagementMenuEN" : "Teacher Management",
+    "TeacherManagementMenuFR" : "Gestionnaire des intervenants",
+    "TeacherMgtFollowUpEN": "Follow up",
+    "TeacherMgtFollowUpFR": "Suivi",
+    "TeacherMgt_teachersEN": "Teachers",
+    "TeacherMgt_teachersFR": "Intervenants",
+    "TeacherMgt_ContractMgtEN": "Contract Management",
+    "TeacherMgt_ContractMgtFR": "Suivi des contrat"
+    
+}

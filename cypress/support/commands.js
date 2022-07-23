@@ -1,8 +1,7 @@
 import EDHLoginPage from '../integration/auto/pageObjects/EDHloginPage'
 
-Cypress.Commands.add('EDHlogin', (env, email, password) => {
+Cypress.Commands.add('EDHlogin', (email, password) => {
     const loginPage = new EDHLoginPage()
-        cy.visit(env, {timeout:100000})
         loginPage.getEmailfield().type(email)
         loginPage.getPasswordfield().type(password)
         loginPage.getLoginButton().click()
