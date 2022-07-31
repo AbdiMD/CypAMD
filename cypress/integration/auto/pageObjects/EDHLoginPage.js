@@ -20,6 +20,26 @@ getLoginButton()
     return cy.get('button[color=success]', {timeout:7000})
 }
 
+getSelectEntity()
+{
+    return cy.get('#mat-select-0')
+}
+
+getSelectEntityDropdown()
+{
+    return cy.get('.mat-select-panel > mat-option > .mat-option-text')
+}
+
+getSelectUserType()
+{
+    return cy.get('#mat-select-1')
+}
+
+getSelectUserTypeDropdown()
+{
+    return cy.get('mat-option > .mat-option-text')
+}
+
 }
 
 export default EDHLoginPage;

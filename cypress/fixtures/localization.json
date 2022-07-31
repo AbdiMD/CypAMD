@@ -8,6 +8,29 @@
     "TeacherMgt_teachersEN": "Teachers",
     "TeacherMgt_teachersFR": "Intervenants",
     "TeacherMgt_ContractMgtEN": "Contract Management",
-    "TeacherMgt_ContractMgtFR": "Suivi des contrat"
+    "TeacherMgt_ContractMgtFR": "Suivi des contrat",
+    "SettingEN" : "Settings",
+    "SettingFR" : "Paramètres",
+    "ImportObjectiveEN": "Import of Objectives",
+    "ImportObjectiveFR": "Import des Objectifs",
+    "ImportofFinanceObjectivesEN" : "Import of Finance Objectives",
+    "ImportofFinanceObjectivesFR" : "Import des Finance Objectifs",
+    "ImportofFinancialN1EN" : "Import of financial N - 1",
+    "ImportofFinancialN1FR" : "Import des Finance N - 1",
+    "DiaposExternalEN" : "Diapos External",
+    "DiaposExternalFR" : "Diapos Externes",
+    "MessageStepsEN" : "Messages Steps",
+    "MessageStepsFR" : "Messages Etapes",
+    "NotificationManagementEN" : "Notification Management",
+    "NotificationManagementFR" : "Gestion des Notifications",
+    "UserPermissionEN" : "User permission",
+    "UserPermissionFR" : "Matrice Utilisateurs",
+    "ViewPermissionEN" : "V = View",
+    "ViewPermissionFR" : "V = Voir",
+    "EditPermissionEN" : "E = Edit",
+    "EditPermissionFR" : "M = Modifier",
+    "HomepageEN" : "HP = Home Page",
+    "HomepageFR" : "HP = Page d'accueil"
+
     
 }

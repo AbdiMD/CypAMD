@@ -1,4 +1,5 @@
 import EDHLoginPage from '../integration/auto/pageObjects/EDHloginPage'
+import EDHUserPermission from '../integration/auto/pageObjects/EDHUserPermission'
 
 Cypress.Commands.add('EDHlogin', (email, password) => {
     const loginPage = new EDHLoginPage()
@@ -6,3 +7,48 @@ Cypress.Commands.add('EDHlogin', (email, password) => {
         loginPage.getPasswordfield().type(password)
         loginPage.getLoginButton().click()
     })
+
+
+Cypress.Commands.add('EDHCheckListofUsertypeEN', () => {
+    const tableHeader = new EDHUserPermission()
+        tableHeader.getTableHeader().contains('Academic Director').should('have.text','Academic Director')
+        tableHeader.getTableHeader().contains('Academic Member')
+        tableHeader.getTableHeader().contains('Academic Referent')
+        tableHeader.getTableHeader().contains('Admission Director')
+        tableHeader.getTableHeader().contains('Admission Member')
+        tableHeader.getTableHeader().contains('Alumni Member')
+        tableHeader.getTableHeader().contains('CEO')
+        tableHeader.getTableHeader().contains('Company Relation Director')
+        tableHeader.getTableHeader().contains('Company Relation Member')
+        tableHeader.getTableHeader().contains('Continuous Formation Manager')
+        tableHeader.getTableHeader().contains('Contract Manager')
+        tableHeader.getTableHeader().contains('Finance Director')
+        tableHeader.getTableHeader().contains('Finance Member')
+        tableHeader.getTableHeader().contains('Mentor')
+        tableHeader.getTableHeader().contains('Student')
+        tableHeader.getTableHeader().contains('Teacher')
+        tableHeader.getTableHeader().contains('Operator Admin')
+        tableHeader.getTableHeader().contains('Operator Director')
+})
+
+Cypress.Commands.add('EDHCheckListofUsertypeFR', () => {
+    const tableHeader = new EDHUserPermission()
+        tableHeader.getTableHeader().contains('Directeur de la pédagogie')
+        tableHeader.getTableHeader().contains('Membre de la pédagogie')
+        tableHeader.getTableHeader().contains('Référent pédagogique')
+        tableHeader.getTableHeader().contains('Directeur des admissions')
+        tableHeader.getTableHeader().contains('Membre des admissions')
+        tableHeader.getTableHeader().contains('Membre des alumni')
+        tableHeader.getTableHeader().contains('CEO')
+        tableHeader.getTableHeader().contains('Directeur relation entreprise')
+        tableHeader.getTableHeader().contains('Membre relation entreprise')
+        tableHeader.getTableHeader().contains('Responsable formation continue')
+        tableHeader.getTableHeader().contains('Gestionnaire de contrat')
+        tableHeader.getTableHeader().contains('Directeur de la Finance')
+        tableHeader.getTableHeader().contains('Membre de la Finance')
+        tableHeader.getTableHeader().contains('Tuteur d’Entreprise')
+        tableHeader.getTableHeader().contains('Apprenant')
+        tableHeader.getTableHeader().contains('Enseignant')
+        tableHeader.getTableHeader().contains('Opérateur Admin')
+        tableHeader.getTableHeader().contains('Opérateur Directeur')
+})
