@@ -18,7 +18,7 @@ describe('Step 1: Teacher management access & Permission', function(){
         const sidebar = new EDHSidebarmenu
         
         // 1. Login as Operator director
-        cy.visit(this.data.env, {timeout:100000})
+        cy.visit(this.data.env, {timeout:120000})
         cy.EDHlogin(this.data.operatorDirectorEmail, this.data.operatorDirectorPassword)
 
         // 2. Check if side bar menu is there or not
