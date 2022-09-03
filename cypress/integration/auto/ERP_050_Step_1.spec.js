@@ -18,7 +18,7 @@ describe('Step 1: Teacher management access & Permission', function(){
         const sidebar = new EDHSidebarmenu
         
         // 1. Login as Operator director
-        cy.visit(this.data.env, {timeout:120000})
+        cy.visit(this.data.env, {timeout:150000})
         cy.EDHlogin(this.data.operatorDirectorEmail, this.data.operatorDirectorPassword)
 
         // 2. Check if side bar menu is there or not
@@ -221,6 +221,12 @@ describe('Step 1: Teacher management access & Permission', function(){
         cy.get('ms-language-drop-down').click()
         cy.get('.mat-menu-content > :nth-child(2)').click()
         cy.EDHCheckListofUsertypeFR()
+
+        // 12. I can see there is Teacher Management in the Menu column
+        cy.get('.label-level').contains(TeacherManagementMenuFR).should('exist')
+        cy.get('.label-level').contains(TeacherManagementMenuFR).next().should('have.text', 'Follow Up')
+        cy.get('.label-level').contains(TeacherMgt_teachersFR).should('exist')
+        cy.get('.label-level').contains(TeacherMgt_ContractMgtFR).should('exist')
 
 
     })
