@@ -30,7 +30,18 @@
     "EditPermissionEN" : "E = Edit",
     "EditPermissionFR" : "M = Modifier",
     "HomepageEN" : "HP = Home Page",
-    "HomepageFR" : "HP = Page d'accueil"
+    "HomepageFR" : "HP = Page d'accueil",
+    "CourseandsequencesFR" : "Cours & Séquences",
+    "CourseandsequencesEN" : "Courses & Sequences",
+    "TemplateFR": "Modèles",
+    "TemplateEN": "Template",
+    "SequenceFR": "Séquences",
+    "SequenceEN": "Sequences",
+    "ModulesFR": "Modules",
+    "ModulesEN": "Modules",
+    "SubjectFR": "Matières",
+    "SubjectEN": "Subjects"
+    
 
     
 }

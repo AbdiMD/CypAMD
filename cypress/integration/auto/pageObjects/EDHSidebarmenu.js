@@ -57,6 +57,27 @@ class EDHSidebarmenu
         return cy.get('mat-list-item > .mat-list-item-content > mat-nav-list > mat-list-item > .mat-list-item-content > div > a[href="/user-permission"] > span')
     }
 
+    // Get menu Course & Sequences
+    getCourseandSequences(){
+        return cy.get('mat-list-item > .mat-list-item-content > a[href="/template-sequences"] > span')
+    }
+
+    getTemplatesubmenu(){
+        return cy.get('mat-list-item > div > div > a[href="/template-sequences"] > span')
+    }
+
+    getSequencessubmenu(){
+        return cy.get('mat-list-item > div > div > a[href="/sequences"] > span')
+    }
+
+    getModulessubmenu(){
+        return cy.get('mat-list-item > div > div > a[href="/modules"] > span')
+    }
+
+    getSubjectssubmenu(){
+        return cy.get('mat-list-item > div > div > a[href="/subjects"] > span')
+    }
+
 }
 
 export default EDHSidebarmenu

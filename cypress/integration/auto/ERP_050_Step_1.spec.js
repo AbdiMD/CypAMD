@@ -223,10 +223,10 @@ describe('Step 1: Teacher management access & Permission', function(){
         cy.EDHCheckListofUsertypeFR()
 
         // 12. I can see there is Teacher Management in the Menu column
-        cy.get('.label-level').contains(TeacherManagementMenuFR).should('exist')
-        cy.get('.label-level').contains(TeacherManagementMenuFR).next().should('have.text', 'Follow Up')
-        cy.get('.label-level').contains(TeacherMgt_teachersFR).should('exist')
-        cy.get('.label-level').contains(TeacherMgt_ContractMgtFR).should('exist')
+        cy.get('.label-level').contains(this.localization.TeacherManagementMenuFR).should('exist')
+        cy.get('.label-level').contains(this.localization.TeacherManagementMenuFR).next().should('have.text', 'Gestionnaire des intervenants')
+        cy.get('.label-level').contains(this.localization.TeacherMgt_teachersFR).should('exist')
+        cy.get('.label-level').contains(this.localization.TeacherMgt_ContractMgtFR).should('exist')
 
 
     })

@@ -52,3 +52,17 @@ Cypress.Commands.add('EDHCheckListofUsertypeFR', () => {
         tableHeader.getTableHeader().contains('Opérateur Admin').should('exist')
         tableHeader.getTableHeader().contains('Opérateur Directeur').should('exist')
 })
+
+
+Cypress.Commands.add('changeLanguage', (language) => {
+    let lang = language;
+    cy.get('ms-language-drop-down').click()
+    if (lang === 'EN'){
+        cy.get('.mat-menu-content > :nth-child(1)').click()
+    } else if (lang === 'FR'){
+        cy.get('.mat-menu-content > :nth-child(2)').click()
+    } else {
+        cy.get('.mat-menu-content > :nth-child(1)').click()
+    }
+    
+})
