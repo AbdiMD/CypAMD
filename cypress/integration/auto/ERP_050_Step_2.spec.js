@@ -1,7 +1,6 @@
 import EDHSidebarmenu from './pageObjects/EDHSidebarmenu'
 import EDHUserPermission from './pageObjects/EDHUserPermission'
 import EDHtemplatepage from './pageObjects/EDHTemlatesequencesPage'
-import { eq } from 'cypress/types/lodash'
 
 
 describe('Step 1: Teacher management access & Permission', function(){
@@ -47,20 +46,22 @@ describe('Step 1: Teacher management access & Permission', function(){
         cy.get('table').should('exist')
 
         // 7. Check 3 button above the table
-        cy.get('th >div >div>button')
-            eq(1).should('have.text', 'Action')
-            eq(2).should('have.text', 'Export')
-            eq(3).should('have.text', 'Reset')
-
+        cy.get('th >div >div>button').should('have.length', 3)
+        
         // 8. Click on button Add Template button and its open on new tab
         cy.window().then(win => {
             cy.stub(win, 'open').as('open')
           })
+
         templatePage.getAddTemplateButton()
         cy.window().its('open').should('be.called')
 
         // 9. Access page manually
         cy.visit('https://zetta-staging.work/template-sequences/form-detail')
+
+        // 10. Add sequence
+        cy.get('#mat-form-field-label-1').click().type('Template AMD')
+        cy.get('#mat-input-1').click().type('This is the description')
 
 
     })
